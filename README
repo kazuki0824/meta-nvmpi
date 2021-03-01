@@ -1,41 +1,25 @@
-This README file contains information on the contents of the jetson-ffmpeg layer.
 
-Please see the corresponding sections below for details.
+meta-nvmpi
+===
+This layer provides the acceleration function for ffmpeg + Tegra environment. The recipe patches ffmpeg and install some modules to activate the hardware acceleration on dec/enc H.264, H.265, VP9.
+
 
 Dependencies
-============
+---
 
-  URI: <first dependency>
-  branch: <branch name>
+  URI: git://github.com/jocover/jetson-ffmpeg.git;protocol=https
+  branch: master
 
-  URI: <second dependency>
-  branch: <branch name>
-
-  .
-  .
-  .
-
-Patches
-=======
-
-Please submit any patches against the jetson-ffmpeg layer to the xxxx mailing list (xxxx@zzzz.org)
-and cc: the maintainer:
-
-Maintainer: XXX YYYYYY <xxx.yyyyyy@zzzzz.com>
-
-Table of Contents
-=================
-
-  I. Adding the jetson-ffmpeg layer to your build
- II. Misc
+  URI: https://github.com/OE4T/meta-tegra.git
+  branch: dunfell
 
 
-I. Adding the jetson-ffmpeg layer to your build
-=================================================
+Adding the meta-nvmpi layer to your build
+---
 
-Run 'bitbake-layers add-layer jetson-ffmpeg'
+Run 'bitbake-layers add-layer meta-nvmpi'
 
-II. Misc
-========
+Contributing
+---
 
---- replace with specific information about the jetson-ffmpeg layer ---
+Please use github for pull requests: https://github.com/kazuki0824/meta-nvmpi/pulls
