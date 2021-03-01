@@ -1,6 +1,7 @@
 
 meta-nvmpi
 ===
+This is the Bitbake layer to add nvmpi in yocto-based distros.
 This layer provides the acceleration function for ffmpeg + Tegra environment. The recipe patches ffmpeg and install some modules to activate the hardware acceleration on dec/enc H.264, H.265, VP9.
 
 
