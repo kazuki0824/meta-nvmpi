@@ -7,13 +7,17 @@ This layer provides the acceleration function for ffmpeg + Tegra environment. Th
 
 Dependencies
 ------------
+The meta-nvmpi layer depends on:
 
-  URI: git://github.com/jocover/jetson-ffmpeg.git;protocol=https
-  branch: master
+	URI: git://git.openembedded.org/openembedded-core
+	layers: meta
+	branch: dunfell
 
-  URI: https://github.com/OE4T/meta-tegra.git
-  branch: dunfell
+	URI: https://github.com/OE4T/meta-tegra.git
+	branch: dunfell
 
+	URI: https://github.com/jocover/jetson-ffmpeg.git
+	branch: master
 
 Adding the meta-nvmpi layer to your build
 -----------------------------------------
